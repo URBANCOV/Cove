@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
-              className="px-6 py-2.5 text-sm font-semibold text-black bg-white rounded-full transition-all duration-300 ease-out transform-gpu hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] active:scale-95 cursor-pointer inline-block"
+              className="px-6 py-2.5 text-sm font-semibold text-black bg-white rounded-full transition-all duration-300 ease-out hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] active:scale-95 cursor-pointer inline-block"
             >
               Let's Talk
             </a>
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
                   <a
                     href="#contact"
                     onClick={(e) => handleNavClick(e, '#contact')}
-                    className="block w-full text-center px-6 py-3 text-base font-semibold text-black bg-white rounded-xl transition-all duration-300 ease-out transform-gpu hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] active:scale-95 cursor-pointer"
+                    className="block w-full text-center px-6 py-3 text-base font-semibold text-black bg-white rounded-xl transition-all duration-300 ease-out hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] active:scale-95 cursor-pointer"
                   >
                     Let's Talk
                   </a>

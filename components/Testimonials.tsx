@@ -47,7 +47,13 @@ const Testimonials: React.FC = () => {
     <SectionWrapper id="testimonials">
       <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
         {/* Left Column */}
-        <div className="lg:col-span-5 flex flex-col justify-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10%" }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="lg:col-span-5 flex flex-col justify-center"
+        >
           <p className="text-sm text-gray-400 mb-4 tracking-wide">Testimonials</p>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
             Trusted by<br />many.
@@ -55,7 +61,7 @@ const Testimonials: React.FC = () => {
           <p className="text-gray-400 text-lg leading-relaxed max-w-sm">
             Here's what people have to say about working together. Real moments, real experiences, real feedback.
           </p>
-        </div>
+        </motion.div>
 
         {/* Right Column */}
         <div className="lg:col-span-7 flex flex-col justify-center relative">
@@ -63,10 +69,10 @@ const Testimonials: React.FC = () => {
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                exit={{ opacity: 0, y: -30 }}
+                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="w-full"
               >
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-6 leading-tight tracking-tight">
@@ -116,7 +122,7 @@ const Testimonials: React.FC = () => {
           <div className="flex items-center gap-8">
             <button 
               onClick={prev} 
-              className="flex items-center gap-3 text-gray-400 hover:text-white transition-all duration-300 ease-out transform-gpu hover:scale-105 active:scale-95 group"
+              className="flex items-center gap-3 text-gray-400 hover:text-white transition-all duration-300 ease-out hover:scale-105 active:scale-95 group"
             >
               <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-all shadow-[0_0_10px_rgba(255,255,255,0.05)] group-hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]">
                 <ArrowLeft size={18} />
@@ -125,7 +131,7 @@ const Testimonials: React.FC = () => {
             </button>
             <button 
               onClick={next} 
-              className="flex items-center gap-3 text-white hover:text-gray-300 transition-all duration-300 ease-out transform-gpu hover:scale-105 active:scale-95 group"
+              className="flex items-center gap-3 text-white hover:text-gray-300 transition-all duration-300 ease-out hover:scale-105 active:scale-95 group"
             >
               <span className="text-sm font-medium">Next</span>
               <div className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-gray-200 transition-all shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]">

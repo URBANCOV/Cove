@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import LogoMarquee from './components/LogoMarquee';
 import About from './components/About';
 import Projects from './components/Projects';
 import Services from './components/Services';
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <main className="relative z-10">
         <Hero />
+        <LogoMarquee />
         <About />
         <Projects />
         <Services />

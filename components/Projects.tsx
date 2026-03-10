@@ -24,13 +24,25 @@ const Projects: React.FC = () => {
           </div>
           
           {/* Foreground Title */}
-          <h3 className="text-2xl md:text-4xl font-bold text-white relative z-10 tracking-tight uppercase">
+          <motion.h3 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="text-2xl md:text-4xl font-bold text-white relative z-10 tracking-tight uppercase"
+          >
             /SELECTED WORK
-          </h3>
+          </motion.h3>
         </div>
 
         {/* Filter Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10%" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-6"
+        >
           <div className="flex items-center gap-6">
             <button 
               onClick={() => setFilter('All')}
@@ -54,21 +66,21 @@ const Projects: React.FC = () => {
 
           <motion.a 
             href="#" 
-            className="flex items-center gap-2 text-sm md:text-base font-medium text-white bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-full transition-all duration-300 ease-out transform-gpu hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]"
+            className="flex items-center gap-2 text-sm md:text-base font-medium text-white bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-full transition-all duration-300 ease-out hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]"
           >
             View All Work <ArrowUpRight size={16} />
           </motion.a>
-        </div>
+        </motion.div>
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-10">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project) => (
               <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.4 }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 key={project.id} 
                 className="group cursor-pointer bg-transparent border border-white/10 overflow-hidden hover:border-white/20 transition-colors"
               >

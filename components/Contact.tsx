@@ -27,11 +27,17 @@ const Contact: React.FC = () => {
         
         {/* Left Side - Text */}
         <div className="flex flex-col justify-between h-full">
-          <div className="mb-20 lg:mb-0 lg:mt-10">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="mb-20 lg:mb-0 lg:mt-10"
+          >
             <h2 className="text-2xl md:text-3xl font-medium text-gray-400 mb-4">Got a project in mind?</h2>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-2 tracking-tight leading-[1.1]">Let's Talk</h1>
             <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500 leading-[1.1]">and Build Together.</h2>
-          </div>
+          </motion.div>
         </div>
 
         {/* Right Side - Form */}
@@ -45,7 +51,7 @@ const Contact: React.FC = () => {
               <p className="text-gray-400">Thanks for reaching out. I'll get back to you shortly.</p>
               <button 
                 onClick={() => setIsSuccess(false)}
-                className="mt-6 px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full text-sm font-medium transition-all duration-300 ease-out transform-gpu hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]"
+                className="mt-6 px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full text-sm font-medium transition-all duration-300 ease-out hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]"
               >
                 Send another
               </button>
@@ -58,29 +64,29 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
+              visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
             }}
             onSubmit={handleSubmit} 
             className="space-y-5"
           >
             {/* Name Group */}
-            <motion.div variants={{ hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } } }} className="border border-white/10 bg-black/20 rounded-xl p-5 flex flex-col sm:flex-row gap-8">
+            <motion.div variants={{ hidden: { opacity: 0, x: 30 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }} className="border border-white/10 bg-black/20 rounded-xl p-5 flex flex-col sm:flex-row gap-8">
               <input type="text" required placeholder="First Name" className="w-full bg-transparent border-b border-white/10 pb-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-white/50 transition-colors" />
               <input type="text" required placeholder="Last Name" className="w-full bg-transparent border-b border-white/10 pb-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-white/50 transition-colors" />
             </motion.div>
 
             {/* Email Group */}
-            <motion.div variants={{ hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } } }} className="border border-white/10 bg-black/20 rounded-xl p-5">
+            <motion.div variants={{ hidden: { opacity: 0, x: 30 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }} className="border border-white/10 bg-black/20 rounded-xl p-5">
               <input type="email" required placeholder="Email Address" className="w-full bg-transparent border-b border-white/10 pb-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-white/50 transition-colors" />
             </motion.div>
 
             {/* Message Group */}
-            <motion.div variants={{ hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } } }} className="border border-white/10 bg-black/20 rounded-xl p-5">
+            <motion.div variants={{ hidden: { opacity: 0, x: 30 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }} className="border border-white/10 bg-black/20 rounded-xl p-5">
               <textarea required rows={4} placeholder="Tell me about your project..." className="w-full bg-transparent border-b border-white/10 pb-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-white/50 transition-colors resize-none"></textarea>
             </motion.div>
 
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } } }} className="pt-4">
-              <button type="submit" disabled={isSubmitting} className="relative overflow-hidden group bg-white hover:bg-gray-200 text-black px-8 py-4 rounded-full flex items-center justify-center gap-3 transition-all duration-300 ease-out transform-gpu hover:scale-105 active:scale-95 disabled:opacity-90 disabled:cursor-not-allowed disabled:hover:scale-100 w-full sm:w-auto min-w-[200px] shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]">
+            <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }} className="pt-4">
+              <button type="submit" disabled={isSubmitting} className="relative overflow-hidden group bg-white hover:bg-gray-200 text-black px-8 py-4 rounded-full flex items-center justify-center gap-3 transition-all duration-300 ease-out hover:scale-105 active:scale-95 disabled:opacity-90 disabled:cursor-not-allowed disabled:hover:scale-100 w-full sm:w-auto min-w-[200px] shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]">
                 <span className="flex items-center gap-2">
                   {isSubmitting && <Loader2 className="animate-spin" size={18} />}
                   {isSubmitting ? 'Sending...' : 'Send Message'}
