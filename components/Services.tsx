@@ -44,24 +44,25 @@ const Services: React.FC = () => {
                 <div className="w-full h-[1px] bg-white/10" />
 
                 <div 
-                  className={`relative cursor-pointer overflow-hidden transition-all duration-500 ${isActive ? 'bg-white/5 py-10 md:py-16 px-6 md:px-12' : 'py-8 md:py-12 px-4 hover:bg-white/[0.02]'}`}
+                  className={`relative cursor-pointer overflow-hidden transition-colors duration-500 ${isActive ? 'bg-white/5' : 'hover:bg-white/[0.02]'}`}
                   onClick={() => setActiveId(isActive ? null : service.id)}
                 >
-                  <div className="flex justify-between items-start md:items-center relative z-10 w-full">
+                  <div className="py-8 md:py-12 px-4 md:px-8 flex justify-between items-start md:items-center relative z-10 w-full">
                     <div className={`flex flex-col ${isActive ? 'w-full md:max-w-[calc(100%-320px)] lg:max-w-[calc(100%-520px)]' : 'max-w-3xl'}`}>
-                      <h3 className={`font-medium tracking-tight transition-all duration-500 ${isActive ? 'text-3xl md:text-5xl lg:text-6xl text-white mb-6' : 'text-2xl md:text-4xl lg:text-5xl text-gray-300'}`}>
+                      <h3 className={`font-medium tracking-tight transition-colors duration-500 text-2xl md:text-4xl lg:text-5xl ${isActive ? 'text-white' : 'text-gray-400'}`}>
                         {service.title}
                       </h3>
                       
-                      <AnimatePresence>
+                      <AnimatePresence initial={false}>
                         {isActive && (
                           <motion.div
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
+                            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                            className="overflow-hidden"
                           >
-                            <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl">
+                            <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl pt-6">
                               {service.description}
                             </p>
                           </motion.div>
