@@ -37,7 +37,7 @@ const About: React.FC = () => {
             viewport={{ once: true, margin: "-10%" }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <a href="#contact" className="inline-flex items-center gap-4 group transition-all duration-300 ease-out hover:scale-105 active:scale-95">
+            <a href="#contact" className="inline-flex items-center gap-4 group transition-all duration-300 ease-out hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-full pr-4 cursor-pointer">
               <span className="text-white text-lg font-medium underline underline-offset-4 decoration-white/30 group-hover:decoration-white transition-colors italic font-serif">Contact Me</span>
               <div className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-gray-200 transition-all shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]">
                 <ArrowRight size={18} />

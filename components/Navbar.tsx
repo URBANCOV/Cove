@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="px-4 py-2 text-sm font-medium text-gray-300 rounded-full hover:text-white hover:bg-white/10 transition-all duration-300 ease-out cursor-pointer"
+              className="px-4 py-2 text-sm font-medium text-gray-300 rounded-full hover:text-white hover:bg-white/10 transition-all duration-300 ease-out cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
             >
               {link.label}
             </a>
@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
-              className="px-6 py-2.5 text-sm font-semibold text-black bg-white rounded-full transition-all duration-300 ease-out hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] active:scale-95 cursor-pointer inline-block"
+              className="px-6 py-2.5 text-sm font-semibold text-black bg-white rounded-full transition-all duration-300 ease-out hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] active:scale-95 cursor-pointer inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               Let's Talk
             </a>
@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
         {/* Mobile Toggle */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-white focus:outline-none z-50 p-2 rounded-full hover:bg-white/10 transition-colors shadow-[0_0_10px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+          className="md:hidden text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50 z-50 p-2 rounded-full hover:bg-white/10 transition-colors duration-300 shadow-[0_0_10px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -125,7 +125,7 @@ const Navbar: React.FC = () => {
                     key={link.label}
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-base font-medium text-gray-300 hover:text-white hover:bg-white/10 rounded-xl transition-all w-full text-center py-3 cursor-pointer"
+                    className="text-base font-medium text-gray-300 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300 w-full text-center py-3 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
                   >
                     {link.label}
                   </a>
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
                   <a
                     href="#contact"
                     onClick={(e) => handleNavClick(e, '#contact')}
-                    className="block w-full text-center px-6 py-3 text-base font-semibold text-black bg-white rounded-xl transition-all duration-300 ease-out hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] active:scale-95 cursor-pointer"
+                    className="block w-full text-center px-6 py-3 text-base font-semibold text-black bg-white rounded-xl transition-all duration-300 ease-out hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] active:scale-95 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                   >
                     Let's Talk
                   </a>

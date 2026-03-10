@@ -122,7 +122,7 @@ const Testimonials: React.FC = () => {
           <div className="flex items-center gap-8">
             <button 
               onClick={prev} 
-              className="flex items-center gap-3 text-gray-400 hover:text-white transition-all duration-300 ease-out hover:scale-105 active:scale-95 group"
+              className="flex items-center gap-3 text-gray-400 hover:text-white transition-all duration-300 ease-out hover:scale-105 active:scale-95 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-full pr-4 cursor-pointer"
             >
               <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-all shadow-[0_0_10px_rgba(255,255,255,0.05)] group-hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]">
                 <ArrowLeft size={18} />
@@ -131,7 +131,7 @@ const Testimonials: React.FC = () => {
             </button>
             <button 
               onClick={next} 
-              className="flex items-center gap-3 text-white hover:text-gray-300 transition-all duration-300 ease-out hover:scale-105 active:scale-95 group"
+              className="flex items-center gap-3 text-white hover:text-gray-300 transition-all duration-300 ease-out hover:scale-105 active:scale-95 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-full pl-4 cursor-pointer"
             >
               <span className="text-sm font-medium">Next</span>
               <div className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-gray-200 transition-all shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]">

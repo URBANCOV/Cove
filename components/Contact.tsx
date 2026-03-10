@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
               <p className="text-gray-400">Thanks for reaching out. I'll get back to you shortly.</p>
               <button 
                 onClick={() => setIsSuccess(false)}
-                className="mt-6 px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full text-sm font-medium transition-all duration-300 ease-out hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]"
+                className="mt-6 px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full text-sm font-medium transition-all duration-300 ease-out hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 cursor-pointer"
               >
                 Send another
               </button>
@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
             </motion.div>
 
             <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }} className="pt-4">
-              <button type="submit" disabled={isSubmitting} className="relative overflow-hidden group bg-white hover:bg-gray-200 text-black px-8 py-4 rounded-full flex items-center justify-center gap-3 transition-all duration-300 ease-out hover:scale-105 active:scale-95 disabled:opacity-90 disabled:cursor-not-allowed disabled:hover:scale-100 w-full sm:w-auto min-w-[200px] shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]">
+              <button type="submit" disabled={isSubmitting} className="relative overflow-hidden group bg-white hover:bg-gray-200 text-black px-8 py-4 rounded-full flex items-center justify-center gap-3 transition-all duration-300 ease-out hover:scale-105 active:scale-95 disabled:opacity-90 disabled:cursor-not-allowed disabled:hover:scale-100 w-full sm:w-auto min-w-[200px] shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black cursor-pointer">
                 <span className="flex items-center gap-2">
                   {isSubmitting && <Loader2 className="animate-spin" size={18} />}
                   {isSubmitting ? 'Sending...' : 'Send Message'}

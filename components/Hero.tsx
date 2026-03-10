@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
           >
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-black bg-white rounded-full hover:bg-gray-200 transition-all duration-300 ease-out hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]"
+              className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-black bg-white rounded-full hover:bg-gray-200 transition-all duration-300 ease-out hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               Schedule Call
             </a>
