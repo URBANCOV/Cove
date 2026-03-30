@@ -27,7 +27,7 @@ const About: React.FC = () => {
             </div>
             
             <p className="text-gray-400 text-lg leading-relaxed max-w-md mb-12">
-              I'm all about turning tricky problems into smooth, easy-to-use designs—taking ideas from research to polished prototypes. I love making things intuitive, accessible, and visually awesome, and I thrive on collaborating with teams.
+              I'm a passionate UI/UX designer at the beginning of my journey, eager to turn creative ideas into clean, user-friendly designs. I love learning new tools, exploring design trends, and collaborating with others to build intuitive digital experiences.
             </p>
           </motion.div>
 
@@ -60,44 +60,44 @@ const About: React.FC = () => {
           {/* Stat 1 */}
           <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }}>
             <div className="flex items-start mb-4">
-              <h3 className="text-6xl md:text-7xl lg:text-[7rem] font-medium text-white tracking-tighter leading-none">1M</h3>
+              <h3 className="text-6xl md:text-7xl lg:text-[7rem] font-medium text-white tracking-tighter leading-none">10</h3>
               <span className="text-3xl md:text-4xl lg:text-5xl text-white font-light ml-1">+</span>
             </div>
             <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-[200px]">
-              Users benefiting from our digital solutions
+              Personal projects & design explorations completed
             </p>
           </motion.div>
 
           {/* Stat 2 */}
           <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }}>
             <div className="flex items-start mb-4">
-              <h3 className="text-6xl md:text-7xl lg:text-[7rem] font-medium text-white tracking-tighter leading-none">4.9</h3>
+              <h3 className="text-6xl md:text-7xl lg:text-[7rem] font-medium text-white tracking-tighter leading-none">500</h3>
               <span className="text-3xl md:text-4xl lg:text-5xl text-white font-light ml-1">+</span>
             </div>
             <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-[200px]">
-              Average rating across all client projects
+              Hours dedicated to learning UI/UX principles
             </p>
           </motion.div>
 
           {/* Stat 3 */}
           <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }}>
             <div className="flex items-start mb-4">
-              <h3 className="text-6xl md:text-7xl lg:text-[7rem] font-medium text-white tracking-tighter leading-none">80</h3>
-              <span className="text-3xl md:text-4xl lg:text-5xl text-white font-light ml-1">%</span>
+              <h3 className="text-6xl md:text-7xl lg:text-[7rem] font-medium text-white tracking-tighter leading-none">3</h3>
+              <span className="text-3xl md:text-4xl lg:text-5xl text-white font-light ml-1">+</span>
             </div>
             <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-[200px]">
-              Faster delivery with modern frontend architectures
+              Design tools mastered, including Figma & Framer
             </p>
           </motion.div>
 
           {/* Stat 4 */}
           <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } } }}>
             <div className="flex items-start mb-4">
-              <h3 className="text-6xl md:text-7xl lg:text-[7rem] font-medium text-white tracking-tighter leading-none">99</h3>
+              <h3 className="text-6xl md:text-7xl lg:text-[7rem] font-medium text-white tracking-tighter leading-none">100</h3>
               <span className="text-3xl md:text-4xl lg:text-5xl text-white font-light ml-1">%</span>
             </div>
             <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-[200px]">
-              Uptime guarantee for seamless web experiences
+              Dedication to growing, iterating, and improving
             </p>
           </motion.div>
         </motion.div>

@@ -20,7 +20,6 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-white font-semibold mb-6 text-sm tracking-wide">Services</h3>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-sm">Frontend Dev</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-sm">UI/UX Design</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-sm">Web Apps</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-sm">Consulting</a></li>

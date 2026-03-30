@@ -25,21 +25,12 @@ const Hero: React.FC = () => {
                 hidden: { opacity: 0, y: "100%" },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
               }}
-              className="inline-block"
+              className={char === ' ' ? "inline-block w-[8vw] md:w-[6vw]" : "inline-block"}
             >
               {char === ' ' ? '\u00A0' : char}
             </motion.span>
           ))}
         </motion.h1>
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="flex justify-between w-full max-w-[95vw] md:max-w-[85vw] mt-4 md:mt-8"
-        >
-          <span className="font-display text-[6vw] md:text-[4vw] font-light text-gray-300 tracking-[0.1em] md:tracking-[0.2em] uppercase">Frontend</span>
-          <span className="font-display text-[6vw] md:text-[4vw] font-light text-gray-300 tracking-[0.1em] md:tracking-[0.2em] uppercase">Engineer</span>
-        </motion.div>
       </div>
 
       {/* Foreground Content (Left aligned) */}
@@ -51,7 +42,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="text-sm md:text-base text-gray-300 mb-8 leading-relaxed drop-shadow-lg"
           >
-            Hey there! I'm a Frontend Engineer & UI/UX Designer working in the global marketplace, focused on building intuitive, minimalist interfaces.
+            Hey there! I'm a UI/UX Designer working in the global marketplace, focused on building intuitive, minimalist interfaces.
           </motion.p>
 
           <motion.div

@@ -6,24 +6,24 @@ import SectionWrapper from './SectionWrapper';
 const TESTIMONIALS = [
   {
     id: 1,
-    headline: "Really loved the Braindaze logo design. Great work!",
-    body: "UrbanCove's expertise and dedication are truly unmatched. Their insights and professionalism have made a remarkable impact on our success. Highly recommended!",
+    headline: "Really loved the logo design. Great work!",
+    body: "UrbanCove was super enthusiastic and easy to work with. They took feedback well and delivered a design that perfectly fit my vision for my side project.",
     rating: 5.0,
     author: "Smooth K",
     avatar: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?q=80&w=100&auto=format&fit=crop"
   },
   {
     id: 2,
-    headline: "An absolute pleasure to work with from start to finish.",
-    body: "The attention to detail and creative problem-solving skills brought to the table were exactly what we needed for our platform overhaul. The results speak for themselves.",
+    headline: "A great collaborator with a keen eye for design.",
+    body: "I worked with UrbanCove on a small web project. They were very communicative, eager to learn our requirements, and provided some really fresh design ideas.",
     rating: 5.0,
     author: "Sarah Jenkins",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop"
   },
   {
     id: 3,
-    headline: "Transformed our user experience completely.",
-    body: "Not only did they deliver a beautiful interface, but the underlying code quality is exceptional. It's rare to find someone who excels at both design and engineering.",
+    headline: "Delivered exactly what we asked for.",
+    body: "UrbanCove helped us redesign our landing page. They were very receptive to our ideas and worked hard to make sure the final prototype looked clean and modern.",
     rating: 4.9,
     author: "Marcus Chen",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop"
