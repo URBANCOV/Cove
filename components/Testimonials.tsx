@@ -75,7 +75,7 @@ const Testimonials: React.FC = () => {
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="w-full"
               >
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-6 leading-tight tracking-tight">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-6 leading-tight tracking-tight">
                   {current.headline}
                 </h3>
                 <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl">
@@ -83,7 +83,7 @@ const Testimonials: React.FC = () => {
                 </p>
 
                 <div className="flex items-center justify-between relative">
-                  <div className="flex items-center gap-6">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                     <span className="text-gray-500 text-sm font-mono">[{currentIndex + 1}]</span>
                     <img 
                       src={current.avatar} 
@@ -109,7 +109,7 @@ const Testimonials: React.FC = () => {
                   </div>
                   
                   {/* Large Quote Icon */}
-                  <Quote className="w-20 h-20 text-white/5 absolute right-0 top-1/2 -translate-y-1/2 rotate-180" />
+                  <Quote className="hidden sm:block w-16 h-16 sm:w-20 sm:h-20 text-white/5 absolute right-0 top-1/2 -translate-y-1/2 rotate-180" />
                 </div>
               </motion.div>
             </AnimatePresence>

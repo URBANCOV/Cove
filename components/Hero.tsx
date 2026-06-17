@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
           variants={{
             visible: { transition: { staggerChildren: 0.08 } }
           }}
-          className="text-[18vw] md:text-[15vw] font-bold text-white leading-[0.8] tracking-tighter whitespace-nowrap flex overflow-hidden"
+          className="text-[14vw] sm:text-[14vw] md:text-[15vw] font-bold text-white leading-[0.8] tracking-tighter whitespace-nowrap flex overflow-hidden"
         >
           {"URBAN COVE".split('').map((char, i) => (
             <motion.span 
@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
                 hidden: { opacity: 0, y: "100%" },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
               }}
-              className={char === ' ' ? "inline-block w-[8vw] md:w-[6vw]" : "inline-block"}
+              className={char === ' ' ? "inline-block w-[4vw] md:w-[6vw]" : "inline-block"}
             >
               {char === ' ' ? '\u00A0' : char}
             </motion.span>

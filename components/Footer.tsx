@@ -3,12 +3,12 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="border-t border-white/10 pt-20 pb-10">
-      <div className="w-full mx-auto px-6 md:px-12 lg:px-24 max-w-[1600px]">
+      <div className="w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-[1600px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
           
           {/* Brand & Description (Takes up 2 columns on large screens) */}
           <div className="lg:col-span-2">
-            <a href="#home" className="text-5xl md:text-6xl font-bold text-white tracking-tighter mb-6 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-lg w-fit">
+            <a href="#home" className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tighter mb-6 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-lg w-fit">
               UrbanCove<span className="text-blue-500">.</span>
             </a>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">

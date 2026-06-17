@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-6"
         >
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-6">
             <button 
               onClick={() => setFilter('All')}
               className={`text-sm md:text-base font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-md px-2 py-1 ${filter === 'All' ? 'text-white [text-shadow:0_0_10px_rgba(255,255,255,0.5)]' : 'text-gray-500 hover:text-gray-300 hover:[text-shadow:0_0_8px_rgba(255,255,255,0.3)]'}`}
